@@ -1,0 +1,21 @@
+@using JobBoard.Models;
+
+<h1>Job Board</h1>
+
+@if (Model.Count == 0)
+{
+  <p>There are no jobs in the list.</p>
+}
+<ul>
+  @foreach (Jobs i in Model)
+  {
+    <li><a href='/jobs/@i.Id'>@i.Title</a></li>
+    <li><a href='/jobs/@i.Id'>@i.Description</a></li>
+    <li><a href='/jobs/@i.Id'>@i.ContactInfo</a></li> 
+  }
+</ul>
+<a href="/jobs/new">Add a new Job.</a>
+
+<form action="/jobs/delete" method="post">
+  <button type="submit" name="button">Clear All Items</button>
+</form>

@@ -1,0 +1,8 @@
+<h1>Job Details: </h1>
+<h2>Job Title: @Model["job"].Title</h2>
+<p>Job Description: @Model["job"].Description</p>
+<p>contact Person: @Model["job"].ContactInfo</p>
+<h3>Category: @Model["category"].Name</h3>
+
+<a href='/categories/@Model["category"].Id/jobs/new'>Add another Job</a>
+<a href='/categories'>View all categories</a>

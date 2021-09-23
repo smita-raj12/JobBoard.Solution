@@ -1,0 +1,12 @@
+<h1>Add a new Job to @Model.Name</h1>
+
+<form action="/categories/@Model.Id/jobs" method="post">
+  <input id="categoryId" name="categoryId" type="hidden" value="@Model.Id">
+  <label for="title">Title</label>
+  <input id="title" name="title" type="text">
+  <label for="jobDescription">Job Description</label>
+  <input id="jobDescription" name="jobDescription" type="text"> 
+  <label for="contactInfo">Contact Info</label>
+  <input id="contactInfo" name="contactInfo" type="text"> 
+  <button type='submit'>Add Job</button>
+</form>
