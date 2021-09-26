@@ -1,3 +1,4 @@
+
 <h1>Job Details: </h1>
 <h2>Job Title: @Model["job"].Title</h2>
 <p>Job Description: @Model["job"].Description</p>
@@ -6,3 +7,6 @@
 
 <a href='/categories/@Model["category"].Id/jobs/new'>Add another Job</a>
 <a href='/categories'>View all categories</a>
+@{
+  Layout = "_Layout";
+}
